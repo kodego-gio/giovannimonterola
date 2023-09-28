@@ -4,7 +4,7 @@
   "description": "my portfolio with stripe integration",
   "main": "server.js",
   "scripts": {
-    "start": "html/index.html"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
