@@ -4,7 +4,7 @@
 const stripe = require('stripe')('sk_test_51NdYCzDeOUpHvtZozYYQJldSA8EjdBdUaspooVvUFtr6kmPOfkc0uy3Qi4SqLdEvs9wedCxFgVeo6yAJiCr94h1f003LthdJwT');
 const express = require('express');
 const app = express();
-app.use(express.static('html'));
+app.use(express.static('public'));
 
 const YOUR_DOMAIN = 'http://localhost:4242';
 
@@ -18,8 +18,8 @@ app.post('/create-checkout-session', async (req, res) => {
       },
     ],
     mode: 'payment',
-    success_url: `${YOUR_DOMAIN}/html/success.html`,
-    cancel_url: `${YOUR_DOMAIN}/html/cancel.html`,
+    success_url: `${YOUR_DOMAIN}/success.html`,
+    cancel_url: `${YOUR_DOMAIN}/cancel.html`,
   });
 
   res.redirect(303, session.url);

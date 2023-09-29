@@ -532,7 +532,27 @@ main > h2 {
     display: inline-block;
     width: 10px;  
 }
+/*------------------------------------------- Success Page ----------------------------------------------*/
 
+.success-page {
+    background-color: #ffffff;
+}
+
+button#btn-ebook {
+    margin-left: 6rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.h1-successpage {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    background-color: crimson;
+    color: #ffffff;
+    
+}
 
 /* --------------------------------------------------------------------- Media Querries -----------------------------------------*/
 
